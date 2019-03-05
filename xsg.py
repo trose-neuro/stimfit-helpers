@@ -7,9 +7,9 @@ def load():
 
     # wx Widgets to create a file selection window
     fname = wx.FileSelector("Import Ephus file" ,
-    default_extension = "Ratiometric" ,
+    default_extension = "Ephus XSG" ,
     default_path = "." ,
-    wildcard = "Matlab Ephus xsg. text export (*.xsg)|*.xsg" ,
+    wildcard = "Matlab Ephus xsg. text import (*.xsg)|*.xsg" ,
     flags = wx.OPEN | wx.FILE_MUST_EXIST)
 
     data_sio = sio.loadmat(fname, squeeze_me = True)
