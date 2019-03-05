@@ -16,9 +16,9 @@ def load():
     data = data_sio.get('data');
     trace = data['ephys'].item().item()[0]
     header = data_sio.get('header')
-    dt = header['ephys'].item().item()[0]['sampleRate']
+    dt = header['ephys'].item().item()[0]['sampleRate'].item()
 
     stf.new_window( trace[1:])
-    stf.set_sampling_interval( dt )
+    stf.set_sampling_interval(1000/np.double(dt))
     stf.set_xunits('ms')
     stf.set_yunits('pA')
