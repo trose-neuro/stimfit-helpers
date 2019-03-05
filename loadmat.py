@@ -1,4 +1,17 @@
-import stf
+import scipy.io as sio
+import numpy as np
+import matplotlib.pyplot as plt
+
+filename = '/users/trose/data/SW0003/SW0003AAAA0051.xsg'
+
+data_sio = sio.loadmat(filename, squeeze_me = True)
+data = data_sio.get('data');
+trace = data['ephys'].item().item()[0]
+header = data_sio.get('header')
+dt = header['ephys'].item().item()[0]['sampleRate']
+
+times=np.arange(len(trace))/dt
+plt.plot(times,trace);
 
 def loadxsgtxt():
     """
