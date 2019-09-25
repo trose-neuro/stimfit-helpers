@@ -1,0 +1,28 @@
+[__CSR_HEADER__]
+Date=Wednesday, 25 September, 2019
+Time=14:42:37 PM
+[__MEASURE__]
+Cursor=1
+ShowRuler=0
+[__PEAK__]
+LeftCursor=100
+Rightcursor=191
+PeakAtEnd=0
+NumberOfPoints=1
+Direction=2
+FromBase=1
+RTFactor=20
+Slope=20
+[__BASE__]
+LeftCursor=69
+RightCursor=96
+BaselineMethod=0
+[__DECAY__]
+LeftCursor=106
+RightCursor=438
+StartFitAtPeak=0
+[__LATENCY__]
+LeftCursor=629
+RightCursor=629
+LeftMode=0
+RightMode=0
