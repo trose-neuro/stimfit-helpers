@@ -46,6 +46,26 @@ def get_amplitude_select(amplithresh):
 
     return selectedtraces
 
+def get_amplitude_select_NMDA(amplithresh):
+    stf.unselect_all()
+    stf.set_peak_direction('both')
+    # total number of traces
+    traces = stf.get_size_channel()
+    selectedtraces, i = 0, 0
+
+    while i < traces:
+        stf.set_trace(i)
+        amplitude = stf.get_peak() - stf.get_base()
+        if amplitude < amplithresh and amplitude > 0:
+            # print(i)
+            stf.select_trace(i)
+            i += 1
+            selectedtraces += 1
+        else:
+            i += 1
+
+    return selectedtraces
+
 
 def save():
     stf.file_save("/Users/trose/Data/test.dat")
