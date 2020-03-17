@@ -9,7 +9,7 @@ https://github.com/neurodroid/stimfit
 Install StimFit
 https://github.com/neurodroid/stimfit/releases
 
-This should give you pxthon 2.7 as well. To install the necessary Scipy for pyton 2.7 cd into your ```C:\Python27\Scripts``` folder. Then do ```pip install scipy```. Works for every python 2.7 module like this.
+This should give you python 2.7 as well. To install the necessary Scipy for pyton 2.7 cd into your ```C:\Python27\Scripts``` folder. Then do ```pip install scipy```. Works for every python 2.7 module like this.
 
 Download python module
 /.../stimfit-helpers/xsg.py
